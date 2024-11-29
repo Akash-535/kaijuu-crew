@@ -15,7 +15,7 @@ export const Preloader = () => {
                 <div className='min-h-screen bg-black z-[100] fixed w-full h-full flex justify-center items-center'>
                     <div
                     >
-                        <Lottie animationData={preloader} /></div>
+                        <Lottie className='max-w-3xl' animationData={preloader} /></div>
                 </div>
             ) : null}
         </div>
