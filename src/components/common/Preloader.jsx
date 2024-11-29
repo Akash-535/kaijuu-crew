@@ -10,7 +10,7 @@ export const Preloader = () => {
     },)
 
     return (
-        <div>
+        <div className='max-lg:hidden'>
             {isPreloader ? (
                 <div className='min-h-screen bg-black z-[100] fixed w-full h-full flex justify-center items-center'>
                     <div
