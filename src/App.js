@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import HeroSection from './components/HeroSection';
+import AboutUsSection from './components/AboutUsSection';
+import CrewClasses from './components/CrewClasses';
+import StorySection from './components/StorySection';
+import TraitsSection from './components/TraitsSection';
+import RoadmapSection from './components/RoadmapSection';
+import TeamSwiper from './components/TeamSwiper';
+import FaqSection from './components/FaqSection';
+import Preloader from './components/common/Preloader';
+import BackToTop from './components/common/BackToTop';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Preloader/>
+<HeroSection/>
+<AboutUsSection/>
+<CrewClasses/>
+<StorySection/>
+<TraitsSection/>
+<RoadmapSection/>
+<TeamSwiper/>
+<FaqSection/>
+<BackToTop/>
     </div>
   );
 }
