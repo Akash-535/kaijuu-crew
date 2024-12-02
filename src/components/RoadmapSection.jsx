@@ -38,7 +38,8 @@ const RoadmapSection = () => {
                     </div>
                     <div className='absolute max-xl:relative  xl:!top-[30%]'>
                         <div className='relative w-max'>
-                            <img className='relative z-20 max-md:max-w-[120px] max-sm:max-w-24' src={roadmapBox} alt="Pentagon" />
+                            <img className='relative z-20 max-md:max-w-[120px] max-sm:max-w-24' src={roadmapBox} alt="img
+                            " />
                             <p className='text-[40px] z-20 font-oswald max-xl:text-4xl max-lg:text-3xl max-md:text-xl leading-120 text-center text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
                                 Phase-1
                             </p>
@@ -59,7 +60,8 @@ const RoadmapSection = () => {
                     </div>
                     <div className='absolute max-xl:relative xl:top-[48%] xl:left-[20%] max-xl:mx-auto'>
                         <div className='relative w-max'>
-                            <img className='relative z-20 max-md:max-w-[120px] max-sm:max-w-24' src={roadmapBox} alt="Pentagon" />
+                            <img className='relative z-20 max-md:max-w-[120px] max-sm:max-w-24' src={roadmapBox} alt="img
+                            " />
                             <p className='text-[40px] z-20 font-oswald max-xl:text-4xl max-lg:text-3xl max-md:text-xl leading-120 text-center text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
                                 Phase-2
                             </p>
@@ -80,7 +82,8 @@ const RoadmapSection = () => {
                     </div>
                     <div className='absolute max-xl:relative  xl:top-[30%] xl:left-[40%]'>
                         <div className='relative w-max'>
-                            <img className='relative z-20 max-md:max-w-[120px] max-sm:max-w-24' src={roadmapBox} alt="Pentagon" />
+                            <img className='relative z-20 max-md:max-w-[120px] max-sm:max-w-24' src={roadmapBox} alt="img
+                            " />
                             <p className='text-[40px] z-20 font-oswald max-xl:text-4xl max-lg:text-3xl max-md:text-xl leading-120 text-center text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
                                 Phase-3
                             </p>
@@ -89,7 +92,7 @@ const RoadmapSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className='max-xl:flex roadmap-item max-xl:flex-row-reverse items-center max-xl:w-max max-xl:gap-10 max-md:max-w-[769px] max-md:w-full'>
+                <div className='max-xl:flex roadmap-item max-xl:flex-row-reverse items-center max-xl:w-max max-xl:gap-10 max-sm:ga-[3.8rem] max-md:max-w-[769px] max-md:w-full'>
                     <div className='absolute max-xl:relative  xl:bottom-[13%] xl:left-[60%] '>
                         <ul>
                             <li className='list-disc  text-white'>
@@ -102,7 +105,8 @@ const RoadmapSection = () => {
                     </div>
                     <div className='absolute max-xl:relative  xl:top-[48%] max-xl:mx-auto xl:left-[60%]'>
                         <div className='relative w-max'>
-                            <img className='relative z-20 max-md:max-w-[120px] max-sm:max-w-24' src={roadmapBox} alt="Pentagon" />
+                            <img className='relative z-20 max-md:max-w-[120px] max-sm:max-w-24' src={roadmapBox} alt="img
+                            " />
                             <p className='text-[40px] z-20 font-oswald max-xl:text-4xl max-lg:text-3xl max-md:text-xl leading-120 text-center text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
                                 Phase-4
                             </p>
@@ -121,7 +125,8 @@ const RoadmapSection = () => {
                     </div>
                     <div className='absolute max-xl:relative  xl:top-[30%] max-xl:mx-auto xl:left-[80%]'>
                         <div className='relative w-max'>
-                            <img className='relative z-20 max-md:max-w-[120px] max-sm:max-w-24' src={roadmapBox} alt="Pentagon" />
+                            <img className='relative z-20 max-md:max-w-[120px] max-sm:max-w-24' src={roadmapBox} alt="img
+                            " />
                             <p className='text-[40px] z-20 font-oswald max-xl:text-4xl max-lg:text-3xl max-md:text-xl leading-120 text-center text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
                                 Phase-5
                             </p>

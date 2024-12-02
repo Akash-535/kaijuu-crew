@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { NAVBAR_ITEM } from './common/Helper';
 import CommonDescription from './common/CommonDescription';
 import UsaFlag from '../assets/images/svg/usa-flag.svg';
@@ -33,6 +33,20 @@ import Preloader from './common/Preloader';
 const HeroSection = () => {
     const [showSlide, setShowSlide] = useState(false);
     const toggleSidebar = () => setShowSlide(!showSlide);
+    useEffect(() => {
+        const handleOverflow = () => {
+            if (showSlide && window.innerWidth < 1024) {
+                document.body.classList.add("overflow-hidden");
+            } else {
+                document.body.classList.remove("overflow-hidden");
+            }
+        };
+        handleOverflow();
+        window.addEventListener("resize", handleOverflow);
+        return () => {
+            window.removeEventListener("resize", handleOverflow);
+        };
+    }, [showSlide]);
 
     return (
         <>
@@ -44,7 +58,7 @@ const HeroSection = () => {
                         <div className='relative z-20'>
                             <a href="#" className='text-[#FF002A] text-4xl font-godzilla font-normal'>Kaijuu<span className='text-white'>Crew</span></a>
                         </div>
-                        <div className={`flex gap-10 max-lg:flex-col max-lg:justify-center max-lg:items-center ${showSlide ? ' max-lg:z-10 max-lg:translate-x-0 max-lg:bg-black max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:h-full max-lg:w-full max-lg:bg-opacity-80 max-lg:transition-opacity duration-500 ease-linear blur-[80%] ' : 'max-lg:-left-full max-lg:hidden duration-500 ease-linear'}`}>
+                        <div className={`flex gap-10 max-lg:flex-col max-lg:justify-center max-lg:items-center ${showSlide ? ' max-lg:z-10 max-lg:translate-x-0 max-lg:bg-black max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:h-full max-lg:w-full max-lg:bg-opacity-80 max-lg:transition-opacity duration-500 ease-linear blur-[80%]' : 'max-lg:-left-full max-lg:hidden duration-500 ease-linear'}`}>
                             {NAVBAR_ITEM.map((obj, i) => (
                                 <div key={i}>
                                     <li className='flex gap-1 flex-row justify-center items-center relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0  after:h-0.5 after:bg-[#FF002A] pb-0.5'>
@@ -59,7 +73,7 @@ const HeroSection = () => {
                                     <option value="" className='select-none text-black cursor-pointer'>Hindi</option>
                                 </select>    </div>
                         </div>
-                        <div onClick={toggleSidebar} className='z-[150] flex-col gap-1 lg:hidden flex'>
+                        <div onClick={toggleSidebar} className='z-[15] flex-col gap-1 lg:hidden flex'>
                             <span className={`${showSlide ? 'w-8 h-1 bg-white rotate-45 translate-y-3 duration-300 ease-linear rounded' : 'w-6 h-1 bg-white duration-300 ease-linear rounded'}`}></span>
                             <span className={`${showSlide ? 'w-8 h-1 bg-white  translate-x-10 opacity-0 duration-700 ease-linear' : 'w-8 h-1 bg-white duration-700 ease-linear rounded'}`}></span>
                             <span className={`${showSlide ? 'w-8 h-1 bg-white -rotate-45 -translate-y-1 duration-300 ease-linear rounded' : 'w-10 h-1 bg-white duration-300 ease-linear rounded'}`}></span>

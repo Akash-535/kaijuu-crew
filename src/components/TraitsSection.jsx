@@ -10,12 +10,12 @@ const TraitsSection = () => {
                 <div className='container min-[1921px]:max-w-[1920px] mx-auto'>
                     <div className='text-center'>
                         <CommonHeading commonHeading="TRAITS" /></div>
-                    <div className='flex max-lg:flex-col items-center pt-10 gap-6'>
-                        <div className='w-7/12 max-lg:w-full'>
-                            <img className='w-[738px] max-w-none max-lg:w-full max-lg:max-w-[650px]' src={traitsImg} alt="img" />
+                    <div className='flex max-xl:flex-col items-center pt-10 gap-6 justify-center'>
+                        <div className='w-7/12 max-xl:w-full'>
+                            <img className='w-[738px] max-w-none max-xl:w-full max-xl:max-w-[650px] max-xl:mx-auto' src={traitsImg} alt="img" />
                         </div>
-                        <div className='w-5/12 max-lg:w-full flex max-lg:justify-center items-center max-2xl:w-1/2'>
-                            <div className='w-[590px] max-lg:w-full max-lg:max-w-[590px] rounded-[30px] border border-white border-opacity-25 backdrop-filter p-11  backdrop-blur-[20px]'>
+                        <div className='w-5/12 max-xl:w-full flex max-xl:justify-center items-center max-2xl:w-1/2'>
+                            <div className='w-[590px] max-xl:w-full max-xl:max-w-[590px] rounded-[30px] border border-white border-opacity-25 backdrop-filter p-11  backdrop-blur-[20px]'>
                                 <div>
                                     <p className='upercase text-white font-godzilla text-5xl max-lg:text-4xl leading-86 '>Traits</p>
                                 </div>
