@@ -14,17 +14,17 @@ import CommonDescription from './common/CommonDescription'
 const RoadmapSection = () => {
 
     return (
-        <div className='lg:min-h-[1024px] bg-[#011120] pt-[74px] max-xl:pt-16 max-lg:pt-12 max-md:pt-10 -mt-1'>
+        <div id='roadmap' className='lg:min-h-[1024px] bg-[#011120] pt-[74px] max-xl:pt-16 max-lg:pt-12 max-md:pt-10 -mt-1'>
             <div className='text-center'>
                 <CommonHeading commonHeading='ROADMAP' />
             </div>
             <div className='max-w-[1320px] max-xl:px-10 max-xl:py-20 mx-auto w-full lg:min-h-[1024px] relative'>
                 <img className='absolute top-[32%] left-[19%] max-xl:hidden' src={roadmapBg} alt="line" />
                 <img className='absolute top-[32%] left-[59.5%] max-xl:hidden' src={roadmapBg} alt="line" />
-                <img className='absolute top-[48%] left-[17%] max-xl:hidden' src={roadMapLine} alt="roadmapLine" />
-                <img className='absolute top-[48%] left-[36.5%] max-xl:hidden' src={roadMapLineTwo} alt="roadmapLine" />
-                <img className='absolute top-[48%] left-[56%] max-xl:hidden' src={roadMapLineThree} alt="roadmapLine" />
-                <img className='absolute top-[48%] left-[75%] max-xl:hidden' src={roadMapLineFour} alt="RoadmapLine" />
+                <img className='absolute top-[48%] left-[17%] max-xl:hidden' src={roadMapLine} alt="Line" />
+                <img className='absolute top-[48%] left-[36.5%] max-xl:hidden' src={roadMapLineTwo} alt="Line" />
+                <img className='absolute top-[48%] left-[56%] max-xl:hidden' src={roadMapLineThree} alt="Line" />
+                <img className='absolute top-[48%] left-[75%] max-xl:hidden' src={roadMapLineFour} alt="Line" />
                 <div className='max-xl:flex roadmap-item max-xl:flex-row-reverse items-center max-xl:w-max max-xl:gap-10 max-md:max-w-[769px] max-md:w-full'>
                     <div className='absolute max-xl:relative max-md:w-full xl:top-[20%] xl:left-[2%]'>
                         <ul>

@@ -6,7 +6,7 @@ import CommonDescription from './common/CommonDescription'
 const StorySection = () => {
     return (
         <>
-            <div className='bg-[#001120] pt-16 pb-24 max-xl:pb-16 max-lg:py-12 max-md:py-10 -mt-1.5'>
+            <div id='story' className='bg-[#001120] pt-16 pb-24 max-xl:pb-16 max-lg:py-12 max-md:py-10 -mt-1.5'>
                 <div className='container'>
                     <div className='flex items-center max-lg:flex-col'>
                         <div className='w-6/12 max-lg:w-full'>

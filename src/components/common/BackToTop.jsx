@@ -15,7 +15,7 @@ const BackToTop = () => {
     return (
         <div>
             {scrollTop && (
-                <button onClick={scrollHnadler} className='text-xl text-red-900 fixed right-[10px] bottom-[10px] animate-bounce'><img className='size-16' src={backToTop} alt="img" /></button>)
+                <button onClick={scrollHnadler} className='text-xl text-red-900 fixed right-[10px] bottom-[10px] animate-bounce'><img className='size-16 max-md:size-8' src={backToTop} alt="img" /></button>)
             }
         </div>
     )

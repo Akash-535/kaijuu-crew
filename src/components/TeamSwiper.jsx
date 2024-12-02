@@ -11,7 +11,7 @@ import { SwiperNextArrow, SwiperPrevArrow } from './common/Icons';
 const TeamSwiper = () => {
     return (
         <>
-            <div className='bg-[#011120] pt-12 pb-28 max-xl:pb-24 max-lg:pb-20 max-md:pb-16 max-sm:pb-12 -mt-1'>
+            <div id='team' className='bg-[#011120] pt-12 pb-28 max-xl:pb-24 max-lg:pb-20 max-md:pb-16 max-sm:pb-12 -mt-1'>
                 <div className='container relative'>
                     <div className='text-center pb-14'>
                         <CommonHeading commonHeading="TEAM" />

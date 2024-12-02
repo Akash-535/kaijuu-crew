@@ -10,7 +10,7 @@ import cardImgFour from '../assets/images/webp/about-section-img-4.webp'
 const AboutUsSection = () => {
     return (
         <>
-            <div className='bg-[#001120] pt-[61px] pb-[135px] max-xl:pb-20 max-lg:pb-16 max-md:py-14 max-sm:py-8'>
+            <div id='about' className='bg-[#001120] pt-[61px] pb-[135px] max-xl:pb-20 max-lg:pb-16 max-md:py-14 max-sm:py-8'>
                 <div className="container">
                     <div className='flex gap-10 max-lg:gap-7 max-md:gap-4 max-lg:flex-col items-center justify-center'>
                         <div className='w-6/12 max-lg:w-full flex flex-col justify-center'>

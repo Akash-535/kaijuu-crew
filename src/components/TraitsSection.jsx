@@ -6,7 +6,7 @@ import { TraitIcon } from './common/Icons'
 const TraitsSection = () => {
     return (
         <>
-            <div className='bg-traits-bg bg-cover bg-no-repeat pt-24 pb-36 max-xl:pb-24 max-lg:py-20 max-md:py-14 max-sm:py-10 bg-center mx-auto -mt-1'>
+            <div id='traits' className='bg-traits-bg bg-cover bg-no-repeat pt-24 pb-36 max-xl:pb-24 max-lg:py-20 max-md:py-14 max-sm:py-10 bg-center mx-auto -mt-1'>
                 <div className='container min-[1921px]:max-w-[1920px] mx-auto'>
                     <div className='text-center'>
                         <CommonHeading commonHeading="TRAITS" /></div>

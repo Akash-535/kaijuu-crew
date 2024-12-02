@@ -33,6 +33,9 @@ import Preloader from './common/Preloader';
 const HeroSection = () => {
     const [showSlide, setShowSlide] = useState(false);
     const toggleSidebar = () => setShowSlide(!showSlide);
+    const closeNavbar = () => {
+        setShowSlide(false);
+    };
     useEffect(() => {
         const handleOverflow = () => {
             if (showSlide && window.innerWidth < 1024) {
@@ -58,21 +61,21 @@ const HeroSection = () => {
                         <div className='relative z-20'>
                             <a href="#" className='text-[#FF002A] text-4xl font-godzilla font-normal'>Kaijuu<span className='text-white'>Crew</span></a>
                         </div>
-                        <div className={`flex gap-10 max-lg:flex-col max-lg:justify-center max-lg:items-center ${showSlide ? ' max-lg:z-10 max-lg:translate-x-0 max-lg:bg-black max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:h-full max-lg:w-full max-lg:bg-opacity-80 max-lg:transition-opacity duration-500 ease-linear blur-[80%]' : 'max-lg:-left-full max-lg:hidden duration-500 ease-linear'}`}>
+                        <div className={`flex gap-10 max-lg:flex-col max-lg:justify-center max-lg:items-center ${showSlide ? ' max-lg:z-10 max-lg:translate-x-0 max-lg:bg-black max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:h-full max-lg:w-full max-lg:bg-opacity-80 max-lg:transition-opacity duration-500 ease-linear blur-[80%] justify-center items-center' : 'max-lg:-left-full max-lg:hidden duration-500 ease-linear'}`}>
                             {NAVBAR_ITEM.map((obj, i) => (
                                 <div key={i}>
                                     <ul>
                                         <li className='flex gap-1 flex-row justify-center items-center relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0  after:h-0.5 after:bg-[#FF002A] pb-0.5'>
-                                            <a href={obj.link} className='font-oswald text-[22px] max-lg:text-3xl font-normal'>{obj.item}</a>
+                                            <a onClick={closeNavbar} href={obj.link} className='font-oswald text-[22px] max-lg:text-3xl font-normal'>{obj.item}</a>
                                         </li>
                                     </ul>
                                 </div>
                             ))}
                             <div className='flex items-center gap-2'>
                                 <img src={UsaFlag} alt="flag" />
-                                <select className='bg-transparent select-none cursor-pointer' name="" id="">
-                                    <option value="" className='select-none text-black cursor-pointer'>ENG</option>
-                                    <option value="" className='select-none text-black cursor-pointer'>Hindi</option>
+                                <select className='bg-transparent select-none cursor-pointer !outline-none' name="" id="">
+                                    <option value="" className='select-none text-black cursor-pointer !outline-none'>ENG</option>
+                                    <option value="" className='select-none text-black cursor-pointer !outline-none'>Hindi</option>
                                 </select>    </div>
                         </div>
                         <div onClick={toggleSidebar} className='z-[15] flex-col gap-1 lg:hidden flex'>
@@ -107,7 +110,7 @@ const HeroSection = () => {
                                 <CommonButton commonButton="CONNECT WALLET" />
                             </div>
                         </div>
-                        <div className='w-7/12 pt-16 max-lg:w-full max-lg:pt-10 max-md:pt-8 max-sm:pt-5'>
+                        <div className='w-7/12 pt-16 max-lg:w-full max-lg:pt-10 max-md:pt-8 max-sm:pt-5 flex lg:justify-end'>
                             <img className='w-full max-w-[707px] max-lg:max-w-[500px]' src={HeroImg} alt="hero img" />
                         </div>
                     </div>

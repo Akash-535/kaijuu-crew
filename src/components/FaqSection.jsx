@@ -23,7 +23,7 @@ const FaqSection = () => {
     };
     return (
         <>
-            <div className='bg-faq-bg bg-cover bg-no-repeat bg-center pt-[106px] max-xl:pt-20 max-lg:pt-16 pb-16 max-md:py-12 max-sm:py-10 -mt-1'>
+            <div id='faq' className='bg-faq-bg bg-cover bg-no-repeat bg-center pt-[106px] max-xl:pt-20 max-lg:pt-16 pb-16 max-md:py-12 max-sm:py-10 -mt-1'>
                 <div className='container min-[1921px]:max-w-[1920px]'>
                     <div className='flex items-end text-center justify-center'>
                         <CommonHeading commonHeading='FAQ' /><p className='text-[40px] font-normal font-godzilla text-white max-md:text-3xl max-sm:text-2xl'>s</p>
@@ -82,10 +82,10 @@ const FaqSection = () => {
                             <a href='#' className='font-godzilla font-normal text-4xl text-[#FF002A]'>Kaijuu<span className='text-white'>Crew</span></a>
                         </div>
                         <div className='flex gap-4 py-7 max-lg:py-5 max-md:pt-4 '>
-                            <a href="https://twitter.com" target='_blank'><TwitterIcon /></a>
-                            <a href="https://discord.com" target='_blank'><FooterDiscordIcon /></a>
-                            <a href="https://instagram.com" target='_blank'><InstaIcon /></a>
-                            <a href="https://opensea.com" target='_blank'><BoatIcon /></a>
+                            <a href="https://twitter.com" target='_blank' className='social-icons'><TwitterIcon /></a>
+                            <a href="https://discord.com" target='_blank' className='social-icons'><FooterDiscordIcon /></a>
+                            <a href="https://instagram.com" target='_blank' className='social-icons'><InstaIcon /></a>
+                            <a href="https://opensea.com" target='_blank' className='social-icons'><BoatIcon /></a>
                         </div>
                         <p className='font-oswald text-[22px] font-normal text-white max-md:text-lg max-sm:text-base'>Copyright © Kaijuu Crew {year}</p>
                     </div>

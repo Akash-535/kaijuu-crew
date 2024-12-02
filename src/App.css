@@ -1,3 +1,6 @@
+*{
+  scroll-behavior: smooth;
+}
 .slide-scroll {
   animation: slide 20s linear infinite;
 }
@@ -14,5 +17,12 @@
 
   100% {
       transform: translateX(-100%);
+  }
+}
+
+@media (max-width:767.98px){
+  .social-icons svg{
+    width: 32px;
+    height: 32px;
   }
 }

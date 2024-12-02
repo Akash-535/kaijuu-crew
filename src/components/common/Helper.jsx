@@ -1,30 +1,30 @@
 export const NAVBAR_ITEM = [
     {
         item: 'About Us',
-        link: 'about'
+        link: '#about'
     },
     {
         item: 'Story',
-        link: 'story'
+        link: '#story'
     },
 
     {
         item: 'Traits',
-        link: 'traits'
+        link: '#traits'
     },
 
     {
         item: 'Roadmap',
-        link: 'roadmap'
+        link: '#roadmap'
     },
 
     {
         item: 'Team',
-        link: 'team'
+        link: '#team'
     },
     {
         item: 'FAQ',
-        link: 'faq'
+        link: '#faq'
     }
 ]
 export const ACCORDION_DATA = [
