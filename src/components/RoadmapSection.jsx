@@ -69,7 +69,7 @@ const RoadmapSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className='max-xl:flex roadmap-item max-xl:flex-row-reverse items-center max-xl:w-max max-xl:gap-10 max-md:max-w-[769px] max-md:w-full'>
+                <div className='max-xl:flex roadmap-item max-xl:flex-row-reverse items-center max-xl:w-max max-xl:gap-10 max-md:max-w-[769px] max-md:w-full pr-5'>
                     <div className='absolute max-xl:relative  xl:top-[20%] xl:left-[40%] max-w-[367px]'>
                         <ul>
                             <li className='list-disc  text-white'>
@@ -92,7 +92,7 @@ const RoadmapSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className='max-xl:flex roadmap-item max-xl:flex-row-reverse items-center max-xl:w-max max-xl:gap-10 max-sm:ga-[3.8rem] max-md:max-w-[769px] max-md:w-full'>
+                <div className='max-xl:flex roadmap-item max-xl:flex-row-reverse items-center max-xl:w-max max-xl:gap-10 max-md:max-w-[769px] max-md:w-full'>
                     <div className='absolute max-xl:relative  xl:bottom-[13%] xl:left-[60%] '>
                         <ul>
                             <li className='list-disc  text-white'>

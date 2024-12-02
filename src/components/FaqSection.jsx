@@ -85,7 +85,7 @@ const FaqSection = () => {
                             <a href="https://twitter.com" target='_blank'><TwitterIcon /></a>
                             <a href="https://discord.com" target='_blank'><FooterDiscordIcon /></a>
                             <a href="https://instagram.com" target='_blank'><InstaIcon /></a>
-                            <a href="https://sea.com" target='_blank'><BoatIcon /></a>
+                            <a href="https://opensea.com" target='_blank'><BoatIcon /></a>
                         </div>
                         <p className='font-oswald text-[22px] font-normal text-white max-md:text-lg max-sm:text-base'>Copyright © Kaijuu Crew {year}</p>
                     </div>
