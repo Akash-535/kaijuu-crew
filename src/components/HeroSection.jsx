@@ -37,9 +37,9 @@ const HeroSection = () => {
     return (
         <>
             <Preloader />
-            <div className='bg-hero-bg overflow-hidden max-w-[1920px] mx-auto'>
+            <div className='bg-hero-bg overflow-hidden mx-auto bg-no-repeat bg-cover bg-center'>
                 {/* Navbar */}
-                <div className='bg-[#141313] text-white pt-9 pb-6 overflow-hidden'>
+                <div className='bg-[#141313] text-white pt-9 pb-6 overflow-hidden min-[1921px]:max-w-[1920px] mx-auto'>
                     <div className='container flex justify-between items-center'>
                         <div className='relative z-20'>
                             <a href="#" className='text-[#FF002A] text-4xl font-godzilla font-normal'>Kaijuu<span className='text-white'>Crew</span></a>
@@ -48,15 +48,15 @@ const HeroSection = () => {
                             {NAVBAR_ITEM.map((obj, i) => (
                                 <div key={i}>
                                     <li className='flex gap-1 flex-row justify-center items-center relative after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0  after:h-0.5 after:bg-[#FF002A] pb-0.5'>
-                                        <a href={obj.link} className='font-oswald'>{obj.item}</a>
+                                        <a href={obj.link} className='font-oswald text-[22px] font-normal'>{obj.item}</a>
                                     </li>
                                 </div>
                             ))}
                             <div className='flex items-center gap-2'>
                                 <img src={UsaFlag} alt="flag" />
                                 <select className='bg-transparent select-none cursor-pointer' name="" id="">
-                                    <option value="" className='select-none text-black'>ENG</option>
-                                    <option value="" className='select-none text-black'>Hindi</option>
+                                    <option value="" className='select-none text-black cursor-pointer'>ENG</option>
+                                    <option value="" className='select-none text-black cursor-pointer'>Hindi</option>
                                 </select>    </div>
                         </div>
                         <div onClick={toggleSidebar} className='z-[150] flex-col gap-1 lg:hidden flex'>
@@ -67,12 +67,12 @@ const HeroSection = () => {
                     </div>
                 </div>
                 {/* Hero Section */}
-                <div className='container'>
+                <div className='container min-[1921px]:max-w-[1920px] mx-auto'>
                     <div className='flex max-lg:flex-col'>
                         <div className='pt-14 pb-8 w-5/12 max-lg:w-full max-lg:pb-2'>
                             <h1 className='text-[#FF002A] leading-[86%] text-[145px] max-xl:text-9xl max-lg:text-7xl max-md:text-6xl font-godzilla'>Kaijuu
                                 <span className='text-white lg:block'>Crew</span></h1>
-                            <div className='max-w-[368px] max-lg:max-w-xl'>
+                            <div className='max-w-[329px] max-lg:max-w-xl'>
                                 <CommonDescription commonDescription="The ocean surges with spray and foam,
                             As Kaijuu rise from depth to roam.
                             Thirty-three hundred, and thirty-three more,
@@ -84,7 +84,7 @@ const HeroSection = () => {
                                 " /></div>
                             <div className='pt-4'>
                                 <p className='font-bold text-5xl text-white font-oswald'>10:20:15:10</p>
-                                <p className='opacity-60 text-white text-lg font-normal font-oswald'>Days left</p>
+                                <p className='opacity-60 text-white text-lg font-normal font-oswald pt-2'>Days left</p>
                             </div>
                             <div className='flex gap-3 pt-4 max-lg:flex-col'>
                                 <button className='bg-[#FF002A] px-9 py-3 font-bold text-lg font-oswald rounded-md text-white leading-[150%] flex items-center gap-4 hover:scale-105 duration-300 ease-linear max-w-[196.55px]'><DiscordIcon />join discord</button>
@@ -96,30 +96,30 @@ const HeroSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex slide-scroll'>
-                    <img className='w-full max-w-[220px] max-lg:max-w-48 max-md:max-w-40' src={dinoImg1} alt="img" />
-                    <img className='w-full max-w-[220px] max-lg:max-w-48 max-md:max-w-40' src={dinoImg2} alt="img" />
-                    <img className='w-full max-w-[220px] max-lg:max-w-48 max-md:max-w-40' src={dinoImg3} alt="img" />
-                    <img className='w-full max-w-[220px] max-lg:max-w-48 max-md:max-w-40' src={dinoImg4} alt="img" />
-                    <img className='w-full max-w-[220px] max-lg:max-w-48 max-md:max-w-40' src={dinoImg5} alt="img" />
-                    <img className='w-full max-w-[220px] max-lg:max-w-48 max-md:max-w-40' src={dinoImg6} alt="img" />
-                    <img className='w-full max-w-[220px] max-lg:max-w-48 max-md:max-w-40' src={dinoImg7} alt="img" />
-                    <img className='w-full max-w-[220px] max-lg:max-w-48 max-md:max-w-40' src={dinoImg8} alt="img" />
-                    <img className='w-full max-w-[220px] max-lg:max-w-48 max-md:max-w-40' src={dinoImg9} alt="img" />
-                    <img className='w-full max-w-[220px] max-lg:max-w-48 max-md:max-w-40' src={dinoImg10} alt="img" />
-                    <img className='w-full max-w-[220px] max-lg:max-w-48 max-md:max-w-40' src={dinoImg11} alt="img" />
-                    <img className='w-full max-w-[220px] max-lg:max-w-48 max-md:max-w-40' src={dinoImg12} alt="img" />
-                    <img className='w-full max-w-[220px] max-lg:max-w-48 max-md:max-w-40' src={dinoImg13} alt="img" />
-                    <img className='w-full max-w-[220px] max-lg:max-w-48 max-md:max-w-40' src={dinoImg14} alt="img" />
-                    <img className='w-full max-w-[220px] max-lg:max-w-48 max-md:max-w-40' src={dinoImg15} alt="img" />
-                    <img className='w-full max-w-[220px] max-lg:max-w-48 max-md:max-w-40' src={dinoImg16} alt="img" />
-                    <img className='w-full max-w-[220px] max-lg:max-w-48 max-md:max-w-40' src={dinoImg17} alt="img" />
-                    <img className='w-full max-w-[220px] max-lg:max-w-48 max-md:max-w-40' src={dinoImg18} alt="img" />
-                    <img className='w-full max-w-[220px] max-lg:max-w-48 max-md:max-w-40' src={dinoImg19} alt="img" />
-                    <img className='w-full max-w-[220px] max-lg:max-w-48 max-md:max-w-40' src={dinoImg20} alt="img" />
-                    <img className='w-full max-w-[220px] max-lg:max-w-48 max-md:max-w-40' src={dinoImg21} alt="img" />
-                    <img className='w-full max-w-[220px] max-lg:max-w-48 max-md:max-w-40' src={dinoImg22} alt="img" />
-                    <img className='w-full max-w-[220px] max-lg:max-w-48 max-md:max-w-40' src={dinoImg23} alt="img" />
+                <div className='flex slide-scroll min-[1921px]:max-w-[1920px] mx-auto'>
+                    <img className='w-full size-[220px] pointer-events-none max-md:size-[160px]' src={dinoImg1} alt="img" />
+                    <img className='w-full size-[220px] pointer-events-none max-md:size-[160px]' src={dinoImg2} alt="img" />
+                    <img className='w-full size-[220px] pointer-events-none max-md:size-[160px]' src={dinoImg3} alt="img" />
+                    <img className='w-full size-[220px] pointer-events-none max-md:size-[160px]' src={dinoImg4} alt="img" />
+                    <img className='w-full size-[220px] pointer-events-none max-md:size-[160px]' src={dinoImg5} alt="img" />
+                    <img className='w-full size-[220px] pointer-events-none max-md:size-[160px]' src={dinoImg6} alt="img" />
+                    <img className='w-full size-[220px] pointer-events-none max-md:size-[160px]' src={dinoImg7} alt="img" />
+                    <img className='w-full size-[220px] pointer-events-none max-md:size-[160px]' src={dinoImg8} alt="img" />
+                    <img className='w-full size-[220px] pointer-events-none max-md:size-[160px]' src={dinoImg9} alt="img" />
+                    <img className='w-full size-[220px] pointer-events-none max-md:size-[160px]' src={dinoImg10} alt="img" />
+                    <img className='w-full size-[220px] pointer-events-none max-md:size-[160px]' src={dinoImg11} alt="img" />
+                    <img className='w-full size-[220px] pointer-events-none max-md:size-[160px]' src={dinoImg12} alt="img" />
+                    <img className='w-full size-[220px] pointer-events-none max-md:size-[160px]' src={dinoImg13} alt="img" />
+                    <img className='w-full size-[220px] pointer-events-none max-md:size-[160px]' src={dinoImg14} alt="img" />
+                    <img className='w-full size-[220px] pointer-events-none max-md:size-[160px]' src={dinoImg15} alt="img" />
+                    <img className='w-full size-[220px] pointer-events-none max-md:size-[160px]' src={dinoImg16} alt="img" />
+                    <img className='w-full size-[220px] pointer-events-none max-md:size-[160px]' src={dinoImg17} alt="img" />
+                    <img className='w-full size-[220px] pointer-events-none max-md:size-[160px]' src={dinoImg18} alt="img" />
+                    <img className='w-full size-[220px] pointer-events-none max-md:size-[160px]' src={dinoImg19} alt="img" />
+                    <img className='w-full size-[220px] pointer-events-none max-md:size-[160px]' src={dinoImg20} alt="img" />
+                    <img className='w-full size-[220px] pointer-events-none max-md:size-[160px]' src={dinoImg21} alt="img" />
+                    <img className='w-full size-[220px] pointer-events-none max-md:size-[160px]' src={dinoImg22} alt="img" />
+                    <img className='w-full size-[220px] pointer-events-none max-md:size-[160px]' src={dinoImg23} alt="img" />
                 </div>
             </div>
         </>
