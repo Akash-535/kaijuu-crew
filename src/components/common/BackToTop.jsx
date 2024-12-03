@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import backToTop from '../../assets/images/webp/back-to-top.webp'
 const BackToTop = () => {
     const [scrollTop, setScrollToTop] = useState(false)
-    const scrollHnadler = () => {
+    const scrollHandler = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' })
     }
     const setHendler = () => {
@@ -15,7 +15,7 @@ const BackToTop = () => {
     return (
         <div>
             {scrollTop && (
-                <button onClick={scrollHnadler} className='text-xl text-red-900 fixed right-[10px] bottom-[10px] animate-bounce'><img className='size-16 max-md:size-8' src={backToTop} alt="img" /></button>)
+                <button onClick={scrollHandler} className='fixed right-[10px] bottom-[10px] animate-bounce z-40'><img className='size-16 max-md:size-8' src={backToTop} alt="img" /></button>)
             }
         </div>
     )

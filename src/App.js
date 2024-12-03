@@ -1,27 +1,27 @@
 import './App.css';
-import HeroSection from './components/HeroSection';
-import AboutUsSection from './components/AboutUsSection';
+import Hero from './components/Hero';
+import AboutUs from './components/AboutUs';
 import CrewClasses from './components/CrewClasses';
-import StorySection from './components/StorySection';
-import TraitsSection from './components/TraitsSection';
-import RoadmapSection from './components/RoadmapSection';
+import StorySection from './components/Story';
+import Traits from './components/Traits';
+import Roadmap from './components/Roadmap';
 import TeamSwiper from './components/TeamSwiper';
-import FaqSection from './components/FaqSection';
 import Preloader from './components/common/Preloader';
 import BackToTop from './components/common/BackToTop';
+import Accordion from './components/Accordion';
 
 function App() {
   return (
     <div>
       <Preloader/>
-<HeroSection/>
-<AboutUsSection/>
+      <Hero/>
+<AboutUs/>
 <CrewClasses/>
 <StorySection/>
-<TraitsSection/>
-<RoadmapSection/>
+<Traits/>
+<Roadmap/>
 <TeamSwiper/>
-<FaqSection/>
+<Accordion/>
 <BackToTop/>
     </div>
   );
